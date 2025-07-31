@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>템플릿 인덱스</title>
+    <style>
+        body {
+            font-family: sans-serif; /* 기본 산세리프 폰트 사용 */
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            background-color: #f8f9fa; /* 밝은 배경색 */
+            color: #343a40; /* 기본 텍스트 색상 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px; /* 컨테이너 최대 너비 조정 */
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 그림자 효과 간결하게 */
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        h1, h2 {
+            color: #212529;
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #007bff; /* 제목 아래 파란색 밑줄 */
+            display: inline-block; /* 밑줄이 제목 너비만큼만 차지하도록 */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #6c757d;
+            font-size: 1em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse; /* 셀 경계선 겹치지 않게 */
+            margin-bottom: 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* 테이블 자체에도 가벼운 그림자 */
+            border-radius: 6px;
+            overflow: hidden; /* 둥근 모서리 적용을 위해 */
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6; /* 행 구분선 */
+        }
+
+        th {
+            background-color: #e9ecef; /* 헤더 배경색 */
+            color: #495057;
+            font-weight: bold;
+            text-transform: uppercase; /* 대문자로 표시 */
+            font-size: 0.9em;
+        }
+
+        tr:hover {
+            background-color: #f1f3f5; /* 마우스 오버 시 행 배경색 변경 */
+        }
+
+        td a {
+            color: #007bff; /* 링크 색상 */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s ease;
+        }
+
+        td a:hover {
+            color: #0056b3; /* 링크 호버 색상 */
+            text-decoration: underline;
+        }
+
+        td.path-column {
+            font-size: 0.85em;
+            color: #6c757d;
+            word-break: break-all;
+        }
+
+        /* 기타 파일 목록을 위한 스타일 */
+        .other-files-section {
+            width: 100%;
+        }
+
+        .other-files-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+            text-align: center; /* 목록 아이템 중앙 정렬 */
+        }
+
+        .other-files-list li {
+            margin-bottom: 10px;
+            padding: 8px 0;
+            border-bottom: 1px dashed #ced4da; /* 점선 구분선 */
+        }
+
+        .other-files-list li:last-child {
+            border-bottom: none;
+        }
+
+        .other-files-list a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+            transition: color 0.2s ease, text-decoration 0.2s ease;
+        }
+
+        .other-files-list a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* 반응형 */
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 10px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.4em;
+            }
+            th, td {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+            td.path-column {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>템플릿 인덱스 목록</h1>
+        <p>아래 테이블에서 각 템플릿의 상세 페이지로 이동하실 수 있습니다.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>템플릿 이름</th>
+                    <th class="path-column">파일 경로</th>
+                    <th>바로가기</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Template Claude</td>
+                    <td class="path-column">`mcard_templete/template/template_claude/index.html`</td>
+                    <td><a href="template/template_claude/index.html" target="_blank">페이지 보기</a></td>
+                </tr>
+                <tr>
+                    <td>Template 1</td>
+                    <td class="path-column">`mcard_templete/template/template1/index.html`</td>
+                    <td><a href="template/template1/index.html" target="_blank">페이지 보기</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M카드 - 그리드형 Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/css/SpoqaHanSansNeo.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Futura:wght@500&display=swap" rel="stylesheet">
+    <link href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="mcardWrap">
+        <!-- Main Section - M카드 그리드형 레이아웃 -->
+        <div class="main">
+            <!-- M카드 그리드형 메인 디자인 -->
+            <div class="mcard-container">
+                <div class="mcard-main">
+                    <div class="main-tit1"></div>
+                    <img src="https://i.pinimg.com/736x/4c/4c/5e/4c4c5e12c4f95fdccd7162f4151ad8f2.jpg" class="img_main" alt="고객용이미지">
+                    <div class="main-tit2"></div>
+                </div>
+                
+                <div class="mcard-content">
+                    <div class="mcard-date">2038.10.28</div>
+                    <div class="mcard-venue">메종 드 프리미어 그랜드홀</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Invitation Section -->
+        <div class="invi">
+            <div class="invi-container">
+                <!-- 신랑 신부 이름 -->
+                <div class="couple-names">
+                    <div class="groom">김준서</div>
+                    <div class="heart"></div>
+                    <div class="bride">이은재</div>
+                </div>
+
+                <!-- 가족 정보 -->
+                <div class="family-info">
+                    <div class="family-line">
+                        <span class="parents">이인수 · 김영희</span>
+                        <span class="relation">의 아들</span>
+                        <span class="name">준서</span>
+                    </div>
+                    <div class="family-line">
+                        <span class="parents">김희승 · 최수연</span>
+                        <span class="relation">의 딸</span>
+                        <span class="name">은재</span>
+                    </div>
+                </div>
+
+                <!-- 편지봉투 메시지 카드 -->
+                <div class="message-card">
+                    <!-- 편지봉투 애니메이션 - 참고 사이트 기반 -->
+                    <div class="envelope-invitation">
+                        <div class="envelope-container" style="--fill-color: #a31e04;">
+                            <!-- 봉투 몸체 -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 336 203">
+                                <rect x="15.19" y="15.12" width="305.12" height="172.78"></rect>
+                            </svg>
+                            
+                            <!-- 오른쪽 사이드 플랩 -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 337 204">
+                                <path d="M321.5,15.4c-7.32,1.46-16.37,2.43-23.27,4.86-6.89,2.43-14.65,6.32-21.54,10.21-6.89,3.89-71.52,45.2-76.26,48.12-4.74,2.92-11.45,6.56-11.45,14.1,0,7.53,1.54,11.9,9.3,17.49,7.76,5.59,74.54,60.27,84.45,64.88,9.91,4.62,14.22,6.08,19.39,7.78,5.17,1.7,19.39,5.35,19.39,5.35V15.4Z"></path>
+                            </svg>
+                            
+                            <!-- 왼쪽 사이드 플랩 -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 337 204">
+                                <path d="M15.95,15.4c7.32,1.46,16.37,2.43,23.27,4.86,6.89,2.43,14.65,6.32,21.54,10.21,6.89,3.89,71.52,45.2,76.26,48.12,4.74,2.92,11.45,6.56,11.45,14.1s-1.54,11.9-9.3,17.49c-7.76,5.59-74.54,60.27-84.45,64.88-9.91,4.62-14.22,6.08-19.39,7.78-5.17,1.7-19.39,5.35-19.39,5.35V15.4Z"></path>
+                            </svg>
+                            
+                            <!-- 아래쪽 플랩 -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 337 204">
+                                <path d="M16.01,188.18s2.62-10.79,5.24-14.07c2.62-3.28,10.04-9.62,14.4-12.67,4.36-3.05,85.97-63.81,88.15-65.92s6.98-4.46,11.78-4.46h33.17s28.37,0,33.17,0,9.6,2.35,11.78,4.46c2.18,2.11,83.79,62.87,88.15,65.92s11.78,9.38,14.4,12.67c2.62,3.28,5.24,14.07,5.24,14.07H16.01Z"></path>
+                            </svg>
+
+                            <!-- 봉투 뚜껑 -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 337 129">
+                                <path d="M315.56,31.71c-7.51,4.88-106.35,67.51-114.69,72.68s-15.01,8.62-32.11,8.62-23.77-3.45-32.11-8.62c-8.34-5.17-107.19-67.8-114.69-72.68-7.51-4.88-5.84-9.77-5.84-15.8h305.3c0,6.03,1.67,10.92-5.84,15.8Z"></path>
+                            </svg>
+
+                            <!-- 편지 내용 -->
+                            <div class="letter-content" id="letterContent">
+                                <div class="letter-content-inner">
+                                    <h2>💌 소중한 당신에게</h2>
+                                    <p>
+                                        환한 햇살처럼 순수한 사람을<br>
+                                        만나 드디어 결혼합니다.<br><br>
+                                        그동안 아껴주신 마음 그대로<br>
+                                        사랑과 존중의 마음을 품고<br>
+                                        함께 살겠습니다.<br><br>
+                                        오셔서 따뜻한 마음으로<br>
+                                        축복해주세요.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 액션 버튼들 -->
+                <div class="action-buttons">
+                    <button class="contact-btn">연락하기</button>
+                    <button class="rsvp-btn">참석의사 전달하기</button>
+                </div>
+            </div>
+        </div>
+        <!-- Calendar Section -->
+        <div class="calender">
+            <div class="calendar-container">
+                <!-- D-day 메시지 -->
+                <div class="dday-message">준서, 은재 결혼식이 <span class="dday-number">00일</span> 남았습니다.</div>
+                <div class="countdown-display">
+                    <div class="time-unit">
+                        <div class="number">128</div>
+                        <div class="label">DAYS</div>
+                    </div>
+                    <div class="separator">:</div>
+                    <div class="time-unit">
+                        <div class="number">20</div>
+                        <div class="label">HOUR</div>
+                    </div>
+                    <div class="separator">:</div>
+                    <div class="time-unit">
+                        <div class="number">48</div>
+                        <div class="label">MIN</div>
+                    </div>
+                    <div class="separator">:</div>
+                    <div class="time-unit">
+                        <div class="number">06</div>
+                        <div class="label">SEC</div>
+                    </div>
+                </div>
+                <!-- 이벤트 날짜 정보 -->
+                <div class="divider"></div>
+                <div class="event-info">
+                    <div class="event-date-time">2025년 9월 6일 토요일 pm 2시</div>
+                    <div class="event-venue">메종 드 프리미어 그랜드홀</div>
+                </div>
+                <div class="divider"></div>
+
+                <!-- 큰 날짜 표시 -->
+                <div class="featured-date">12</div>
+
+                <!-- 캘린더 그리드 -->
+                <div class="calendar-grid">
+                    <!-- 첫 번째 주 -->
+                    <div class="calendar-row">
+                        <div class="calendar-date highlight">01</div>
+                        <div class="calendar-date">02</div>
+                        <div class="calendar-date">03</div>
+                        <div class="calendar-date">04</div>
+                        <div class="calendar-date">05</div>
+                        <div class="calendar-date">06</div>
+                        <div class="calendar-date">07</div>
+                    </div>
+                    <!-- 두 번째 주 -->
+                    <div class="calendar-row">
+                        <div class="calendar-date highlight">08</div>
+                        <div class="calendar-date">09</div>
+                        <div class="calendar-date">10</div>
+                        <div class="calendar-date">11</div>
+                        <div class="calendar-date">12</div>
+                        <div class="calendar-date">13</div>
+                        <div class="calendar-date">14</div>
+                    </div>
+                    <!-- 세 번째 주 -->
+                    <div class="calendar-row">
+                        <div class="calendar-date highlight">15</div>
+                        <div class="calendar-date">16</div>
+                        <div class="calendar-date">17</div>
+                        <div class="calendar-date">18</div>
+                        <div class="calendar-date">19</div>
+                        <div class="calendar-date">20</div>
+                        <div class="calendar-date">21</div>
+                    </div>
+                    <!-- 네 번째 주 -->
+                    <div class="calendar-row">
+                        <div class="calendar-date highlight">22</div>
+                        <div class="calendar-date">23</div>
+                        <div class="calendar-date">24</div>
+                        <div class="calendar-date">25</div>
+                        <div class="calendar-date">26</div>
+                        <div class="calendar-date">27</div>
+                        <div class="calendar-date dday">28</div>
+                    </div>
+                    <!-- 다섯 번째 주 -->
+                    <div class="calendar-row">
+                        <div class="calendar-date highlight">29</div>
+                        <div class="calendar-date">30</div>
+                        <div class="calendar-date">31</div>
+                        <div class="calendar-date"></div>
+                        <div class="calendar-date"></div>
+                        <div class="calendar-date"></div>
+                        <div class="calendar-date"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Album Section -->
+        <div class="album">
+            <div class="album-container">
+                <!-- Album 제목 -->
+                <div class="album-header">
+                    <h2 class="tit-section album-title">Album</h2>
+                </div>
+
+                <!-- Swiper 컨테이너 -->
+                <div class="swiper album-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- 첫 번째 슬라이드 -->
+                        <div class="swiper-slide">
+                            <div class="album-slide">
+                                <!-- 배경 이미지 -->
+                                <div class="album-background">
+                                    <img src="./assets/album-bg-1.jpg" alt="Album Background" />
+                                </div>
+                                
+                                <!-- 중앙 회전된 메인 사진 -->
+                                <div class="album-main-photo">
+                                    <img src="./assets/album-main-1.jpg" alt="Main Photo" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 두 번째 슬라이드 -->
+                        <div class="swiper-slide">
+                            <div class="album-slide">
+                                <div class="album-background">
+                                    <img src="./assets/album-bg-1.jpg" alt="Album Background" />
+                                </div>
+                                <div class="album-main-photo">
+                                    <img src="./assets/album-thumb-1.jpg" alt="Main Photo" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 하단 3개 작은 사진들 - swiper 밖으로 분리 -->
+                <div class="album-thumbnails">
+                    <div class="album-thumb" data-slide="0" data-image="./assets/album-main-1.jpg">
+                        <img src="./assets/album-thumb-1.jpg" alt="Thumbnail 1" />
+                    </div>
+                    <div class="album-thumb" data-slide="0" data-image="./assets/album-thumb-1.jpg">
+                        <img src="./assets/album-thumb-1.jpg" alt="Thumbnail 2" />
+                    </div>
+                    <div class="album-thumb" data-slide="0" data-image="./assets/album-thumb-1.jpg">
+                        <img src="./assets/album-thumb-1.jpg" alt="Thumbnail 3" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="video">
+            <div class="video-container">
+                <!-- Video 제목 -->
+                <div class="video-header">
+                    <h2 class="tit-section video-title">Video</h2>
+                </div>
+
+                <!-- 비디오 플레이어 영역 -->
+                <div class="video-player">
+                    <div class="video-thumbnail">
+                        <img src="./assets/video-bg.jpg" alt="Wedding Video Thumbnail">
+                        <div class="play-button">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="20" fill="rgba(255, 255, 255, 0.9)"/>
+                                <path d="M15 12L28 20L15 28V12Z" fill="#a31e04"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Guestbook Section -->
+        <div class="guestbook">
+            <div class="guestbook-container">
+                <!-- Guestbook 제목 -->
+                <div class="guestbook-header">
+                    <h2 class="tit-section guestbook-title">Guest Book</h2>
+                </div>
+
+                <!-- 방명록 메모지들 -->
+                <div class="guestbook-notes">
+                    <div class="guestbook-note">
+                        <div class="note-paper">
+                            <div class="note-clip"></div>
+                            <div class="note-content">
+                                <div class="note-message">
+                                    결혼을 진심으로 축하해행복하게 잘 살앗으면 좋겟다 결혼을 진심으로 축하해 행복하게잘살..
+                                </div>
+                                <div class="note-author">김철수</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 두 번째 메모지 -->
+                    <div class="guestbook-note">
+                        <div class="note-paper">
+                            <div class="note-clip"></div>
+                            <div class="note-content">
+                                <div class="note-message">
+                                    결혼을 진심으로 축하해행복하게 잘 살앗으면 좋겟다 결혼을 진심으로 축하해 행복하게잘살..
+                                </div>
+                                <div class="note-author">김철수</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 축하메시지 남기기 버튼 -->
+                <div class="guestbook-action">
+                    <button class="write-message-btn">축하메세지 남기기 🎉</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gift Section -->
+        <div class="gift">
+            <div class="gift-container">
+                <!-- Gift 제목 -->
+                <div class="gift-header">
+                    <h2 class="tit-section gift-title">Gifts</h2>
+                </div>
+
+                <!-- 선물 옵션들 -->
+                <div class="gift-options">
+                    <!-- 축의금 -->
+                    <div class="gift-option">
+                        <div class="gift-info">
+                            <div class="gift-description">축의금 전달</div>
+                            <div class="gift-name">축의금</div>
+                        </div>
+                        <div class="gift-icon gift-money-icon">
+                            <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_735_2670)">
+                                    <path d="M12.5412 2.85129C13.8601 4.06346 15.5066 6.24847 16.4478 7.79748C16.843 8.44677 17.1029 9.16477 17.5484 9.78082C18.1663 8.47115 18.8848 7.19693 19.7386 6.02687C22.7084 1.9538 28.0431 -2.18353 32.4301 2.75379C38.3545 9.41961 32.7358 18.5009 28.6611 24.4975C26.7788 27.2697 22.228 33.2641 19.4918 34.8951C18.1642 35.6884 16.8234 35.7173 15.4935 34.8951C12.9059 33.2974 8.56252 27.7129 6.73697 25.0737C2.75612 19.3186 -3.18567 10.0423 2.07263 3.36763C4.95509 -0.293255 9.22199 -0.200181 12.5412 2.85129Z" fill="currentColor"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_735_2670">
+                                        <rect width="35" height="35" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- 화환보내기 -->
+                    <div class="gift-option">
+                        <div class="gift-info">
+                            <div class="gift-description">축하의 마음 꽃으로 전해요</div>
+                            <div class="gift-name">화환보내기</div>
+                        </div>
+                        <div class="gift-icon gift-flower-icon">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_735_2676)">
+                                    <path d="M35.33 12.723C34.8928 11.9684 34.262 11.3142 33.5055 10.8146C32.2124 9.95954 30.6497 9.68654 29.1158 9.66337C28.2284 9.65049 27.3436 9.7123 26.4615 9.79729C26.8751 7.31458 25.7993 4.22407 23.8334 2.38007C21.4174 0.121422 17.7135 -0.161874 15.0697 1.84953C13.7713 2.83592 13.1169 4.23437 12.3631 5.61738C12.0254 6.23805 11.6851 6.86646 11.3684 7.50001C7.5231 6.69905 3.26686 7.87345 1.14398 11.4275C-0.497262 14.1755 -0.329735 17.7013 1.35339 20.3952C1.56803 20.7377 3.30874 21.9224 5.01804 23.0659C3.17786 25.7134 2.24861 28.791 3.07578 30.7226C5.53633 36.4581 12.0725 35.8631 16.423 32.8628C17.5669 32.0747 18.2815 31.6266 18.7631 31.3124C22.3283 36.234 30.2256 37.4445 33.5736 31.4978C34.4845 29.8779 34.8588 27.9128 34.5735 26.0817C34.4452 25.255 34.2018 24.4849 33.7228 23.7973C33.6024 23.6247 31.969 21.7241 31.9559 21.7292C32.77 21.4356 33.6599 21.057 34.2358 20.3952C35.4294 19.0173 36.0158 16.9132 36.0027 15.1284C35.9948 14.2605 35.7514 13.4441 35.3326 12.7204L35.33 12.723Z" fill="currentColor"/>
+                                    <path d="M19.5929 13.1041C16.3444 12.2516 12.5306 14.124 11.8578 17.5106C11.4731 19.4474 12.0149 21.4304 13.5148 22.7928C14.1954 23.4109 15.0409 23.8822 15.9465 24.132C15.9806 24.1475 16.0172 24.1604 16.0513 24.1733C17.4648 24.7115 19.0065 24.8738 20.4907 24.5029C22.3335 24.0419 24.0376 22.4606 24.5218 20.6372C25.4197 17.2814 22.8597 13.9617 19.5929 13.1041Z" fill="#E6CB9C"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_735_2676">
+                                        <rect width="36" height="35" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Location Section -->
+        <div class="location">
+            <div class="location-container">
+                <!-- Location 제목 -->
+                <div class="location-header">
+                    <h2 class="tit-section location-title">Location</h2>
+                </div>
+
+                <!-- 장소명 -->
+                <div class="venue-name">메종 드 프리미어 그랜드홀</div>
+
+                <!-- 주소 -->
+                <div class="venue-address">
+                    <div class="address-text">서울시 강남구 논현로 740</div>
+                    <div class="copy-button">
+                        <img src="./assets/ico_copy.svg" alt="복사 아이콘">
+                        <span>복사</span>
+                    </div>
+                </div>
+
+                <!-- 전화번호 -->
+                <div class="venue-phone">02-000-0000</div>
+
+                <!-- 약도 영역 (비워둠) -->
+                <div class="location-map">
+                    <!-- 약도는 추후 구현 예정 -->
+                </div>
+                <!-- 지도 앱 버튼들 -->
+                <div class="map-buttons">
+                    <button class="map-btn naver">
+                        <img src="./assets/ico_navermap.svg" class="map-icon" alt="네이버지도 아이콘">
+                        <span>네이버지도</span>
+                    </button>
+                    <button class="map-btn tmap">
+                        <img src="./assets/ico_tmap.svg" class="map-icon" alt="티맵 아이콘">
+                        <span>티맵</span>
+                    </button>
+                    <button class="map-btn kakao">
+                        <img src="./assets/ico_kakaonav.svg" class="map-icon" alt="카카오맵 아이콘">
+                        <span>카카오맵</span>
+                    </button>
+                </div>
+                <div class="divider"></div>
+                <!-- ATM 안내 -->
+                <div class="info-section atm-section">
+                    <div class="info-header">
+                        <h3 class="info-title">ATM안내</h3>
+                        <div class="expand-button collapsed">
+                            <svg width="11" height="8" viewBox="0 0 11 8" fill="none">
+                                <path d="M5.5 8L0 0H11L5.5 8Z" fill="#171717"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <!-- 대중교통 안내 -->
+                <div class="info-section transport-section">
+                    <div class="info-header">
+                        <h3 class="info-title">대중교통안내</h3>
+                        <div class="expand-button">
+                            <svg width="11" height="8" viewBox="0 0 11 8" fill="none">
+                                <path d="M5.5 0L11 8H0L5.5 0Z" fill="#171717"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="info-content">
+                        <div class="transport-item">
+                            <div class="transport-type">🚌 버스 안내</div>
+                            <div class="transport-detail">
+                                지선 7017, 7018 / 간선 5025,5028<br>
+                                신사동고개 정류장하차
+                            </div>
+                        </div>
+                        <div class="transport-item">
+                            <div class="transport-type">🚆 지하철 안내</div>
+                            <div class="transport-detail">신사역 4번출구</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Share Section -->
+        <div class="share">
+            <div class="share-container">
+                <!-- Share 제목 -->
+                <div class="share-header">
+                    <h2 class="tit-section share-title">Share</h2>
+                </div>
+
+                <!-- 공유 버튼들 -->
+                <div class="share-buttons">
+                    <!-- 링크복사 버튼 -->
+                    <button class="share-btn link-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" stroke="#5c5c5c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" stroke="#5c5c5c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>링크복사</span>
+                    </button>
+
+                    <!-- 카카오 공유 버튼 -->
+                    <button class="share-btn kakao-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 3c5.799 0 10.5 3.664 10.5 8.185 0 4.52-4.701 8.184-10.5 8.184a13.5 13.5 0 0 1-1.727-.11l-4.408 2.883c-.501.327-.779-.24-.394-.8l2.174-3.188c-2.414-1.446-4.145-3.77-4.145-6.969C1.5 6.664 6.201 3 12 3z" fill="#5c5c5c"/>
+                        </svg>
+                        <span>카카오 공유</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

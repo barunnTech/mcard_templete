@@ -1,0 +1,15 @@
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS specific files
+.DS_Store
+.Trashes
+._*
+.Spotlight-V100
+.TemporaryItems
+_MACOSX/
+.env

@@ -1,0 +1,1148 @@
+/* M카드 그리드형 Template - Main Section Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Brinnan', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8fafc;
+}
+
+.mcardWrap {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* Main Section Styles */
+.main {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+/* M카드 Container */
+.mcard-container {
+    width: 100%;
+    position: relative;
+}
+
+.mcard-background {
+    width: 375px;
+    height: 667px;
+    position: relative;
+    background-color: #d9d9d9;
+    background-image: url('./assets/mcard-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mcard-content {
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.mcard-date {
+    font-family: 'Brinnan', serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #a8212a;
+    line-height: 16.7px;
+    margin-bottom: 9px;
+    letter-spacing: 0;
+}
+
+.mcard-venue {
+    font-family: 'Brinnan', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #a8212a;
+    line-height: 19.09px;
+    letter-spacing: 0;
+}
+
+/* Invitation Section Styles */
+.invi {
+    width: 100%;
+    max-width: 375px;
+    margin-top: 2rem;
+    background-color: #f8fafc;
+    padding: 2rem 0;
+}
+
+.invi-container {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+/* 신랑 신부 이름 */
+.couple-names {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 11px;
+}
+
+.groom, .bride {
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #333333;
+    line-height: 38px;
+    letter-spacing: 0.29px;
+}
+
+.heart {
+    width: 25px;
+    height: 24px;
+    color: #a31e04;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 가족 정보 */
+.family-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 27px;
+}
+
+.family-line {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 8px;
+    height: 34px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 18px;
+    letter-spacing: 0.261px;
+    line-height: 34.2px;
+}
+
+.parents {
+    font-weight: 700;
+    color: #333333;
+}
+
+.relation {
+    font-weight: 600;
+    color: #333333;
+}
+
+.name {
+    font-weight: 700;
+    color: #333333;
+}
+
+/* 메시지 카드 */
+.message-card {
+    width: 334px;
+    height: 410px;
+    margin: 0 auto 27px;
+    position: relative;
+}
+
+.card-background {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, 
+        #c8c8c8 0%, 
+        #ececec 1%, 
+        #ffffff 2%, 
+        #fafafa 98%, 
+        #d9d9d9 99%, 
+        #c8c8c8 100%);
+    border-radius: 6px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('./assets/envelope-decoration.svg') no-repeat center;
+    background-size: contain;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.message-text {
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    line-height: 26.6px;
+    letter-spacing: 0.203px;
+    padding: 2rem;
+    z-index: 1;
+    position: relative;
+}
+
+/* 액션 버튼들 */
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.contact-btn, .share-btn {
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.232px;
+    line-height: 30.4px;
+}
+
+.contact-btn {
+    background-color: #a31e04;
+    color: white;
+}
+
+.contact-btn:hover {
+    background-color: #8b1a03;
+}
+
+.share-btn {
+    background-color: #f7fafc;
+    color: #a31e04;
+    border: 1px solid #a31e04;
+}
+
+.share-btn:hover {
+    background-color: #a31e04;
+    color: white;
+}
+
+/* Calendar Section Styles */
+.calender {
+    width: 100%;
+    max-width: 375px;
+    margin-top: 2rem;
+    background-color: #f8fafc;
+    padding: 2rem 0;
+}
+
+.calendar-container {
+    width: 100%;
+    padding: 0 1rem;
+    position: relative;
+}
+
+/* D-day 메시지 */
+.dday-message {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #171717;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.dday-number {
+    color: #a31e04;
+}
+
+/* 이벤트 정보 */
+.event-info {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.event-date-time {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #171717;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+    margin-bottom: 4px;
+}
+
+.event-venue {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #171717;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+}
+
+/* 큰 날짜 표시 */
+.featured-date {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #171717;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* 캘린더 그리드 */
+.calendar-grid {
+    width: 100%;
+    max-width: 294px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.calendar-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+}
+
+.calendar-date {
+    width: 18px;
+    height: 22px;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #171717;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-date.highlight {
+    color: #dd002a;
+}
+
+/* 하트 아이콘 */
+.calendar-heart {
+    position: absolute;
+    right: 33px;
+    bottom: -30px;
+    width: 32px;
+    height: 30px;
+    color: #a31e04;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Album Section Styles */
+.album {
+    width: 100%;
+    max-width: 375px;
+    margin-top: 2rem;
+    background-color: #f8fafc;
+}
+
+.album-container {
+    width: 100%;
+    position: relative;
+}
+
+/* Album 헤더 */
+.album-header {
+    padding: 100px 10px 32px;
+    text-align: center;
+}
+
+.album-title {
+    font-family: 'Futura', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #171717;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    margin: 0;
+}
+
+/* Swiper 컨테이너 */
+.album-swiper {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.album-slide {
+    width: 375px;
+    height: 670px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 배경 이미지 */
+.album-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 375px;
+    height: 471px;
+    overflow: hidden;
+}
+
+.album-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 회전된 메인 사진 */
+.album-main-photo {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%) rotate(5.25deg);
+    width: 285px;
+    height: 355px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 
+        0 0 4px rgba(0, 0, 0, 0.08),
+        0 4px 8px rgba(0, 0, 0, 0.08),
+        0 6px 12px rgba(0, 0, 0, 0.12);
+    z-index: 2;
+}
+
+.album-main-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 하단 썸네일들 */
+.album-thumbnails {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 3;
+}
+
+.album-thumb {
+    width: 116px;
+    height: 151px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 
+        0 0 4px rgba(0, 0, 0, 0.08),
+        0 4px 8px rgba(0, 0, 0, 0.08),
+        0 6px 12px rgba(0, 0, 0, 0.12);
+    background-color: #d9d9d9;
+}
+
+.album-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Swiper 페이지네이션 커스터마이징 */
+.album-swiper .swiper-pagination {
+    bottom: 10px;
+}
+
+.album-swiper .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+}
+
+.album-swiper .swiper-pagination-bullet-active {
+    background-color: #ffffff;
+}
+
+/* Video Section Styles */
+.video {
+    width: 100%;
+    max-width: 375px;
+    margin-top: 2rem;
+    background-color: #f8fafc;
+}
+
+.video-container {
+    width: 100%;
+    position: relative;
+}
+
+/* Video 헤더 */
+.video-header {
+    padding: 32px 10px 32px;
+    text-align: center;
+    background-color: #a31e04;
+}
+
+.video-title {
+    font-family: 'Futura', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    margin: 0;
+}
+
+/* 비디오 플레이어 */
+.video-player {
+    width: 100%;
+    background-color: #a31e04;
+    padding: 0 16px 24px;
+}
+
+.video-thumbnail {
+    width: 343px;
+    height: 209px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.video-thumbnail:hover {
+    transform: scale(1.02);
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #d9d9d9;
+}
+
+/* 재생 버튼 */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.play-button:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-button svg {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Guestbook Section Styles */
+.guestbook {
+    width: 100%;
+    max-width: 375px;
+    margin-top: 2rem;
+    background-color: #f8fafc;
+}
+
+.guestbook-container {
+    width: 100%;
+    position: relative;
+}
+
+/* Guestbook 헤더 */
+.guestbook-header {
+    padding: 100px 10px 32px;
+    text-align: center;
+}
+
+.guestbook-title {
+    font-family: 'Futura', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #a31e04;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    margin: 0;
+}
+
+/* 방명록 메모지들 */
+.guestbook-notes {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 23px;
+    margin-bottom: 32px;
+    gap: 16px;
+}
+
+.guestbook-note {
+    width: 164px;
+    height: 165px;
+    position: relative;
+}
+
+.guestbook-note.rotated {
+    transform: rotate(-2.2deg);
+}
+
+/* 메모지 종이 */
+.note-paper {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 
+        0 0 1px rgba(0, 0, 0, 0.08),
+        0 0 1px rgba(0, 0, 0, 0.08),
+        0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* 클립 */
+.note-clip {
+    position: absolute;
+    bottom: 8px;
+    left: 6px;
+    width: 23px;
+    height: 23px;
+    background-color: #dddddd;
+    border-radius: 2px;
+    z-index: 2;
+}
+
+/* 메모지 내용 */
+.note-content {
+    padding: 20px 12px 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.note-message {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #9b9b9b;
+    line-height: 20px;
+    letter-spacing: -0.13px;
+    text-align: left;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.note-author {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #9b9b9b;
+    line-height: 20px;
+    letter-spacing: -0.13px;
+    text-align: right;
+    margin-top: auto;
+}
+
+/* 축하메시지 남기기 버튼 */
+.guestbook-action {
+    padding: 0 16px 32px;
+}
+
+.write-message-btn {
+    width: 343px;
+    height: 42px;
+    background-color: transparent;
+    border: 1px solid #a31e04;
+    border-radius: 100px;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #a31e04;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.write-message-btn:hover {
+    background-color: #a31e04;
+    color: white;
+}
+
+/* Gift Section Styles */
+.gift {
+    width: 100%;
+    max-width: 375px;
+    margin-top: 2rem;
+    background-color: #f8fafc;
+}
+
+.gift-container {
+    width: 100%;
+    position: relative;
+}
+
+/* Gift 헤더 */
+.gift-header {
+    padding: 100px 10px 32px;
+    text-align: center;
+}
+
+.gift-title {
+    font-family: 'Futura', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #a31e04;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    margin: 0;
+}
+
+/* 선물 옵션들 */
+.gift-options {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 0 16px 32px;
+}
+
+.gift-option {
+    width: 343px;
+    height: 84px;
+    border: 1px solid #dcddde;
+    border-radius: 8px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gift-option:hover {
+    border-color: #a31e04;
+    box-shadow: 0 2px 8px rgba(163, 30, 4, 0.1);
+}
+
+/* 선물 정보 */
+.gift-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 160px;
+}
+
+.gift-description {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #9b9b9b;
+    line-height: 20px;
+    letter-spacing: -0.13px;
+    margin-bottom: 0;
+}
+
+.gift-name {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #171717;
+    line-height: 24px;
+    letter-spacing: -0.34px;
+}
+
+/* 선물 아이콘 */
+.gift-icon {
+    width: 35.71px;
+    height: 35.14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.gift-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Location Section Styles */
+.location {
+    width: 100%;
+    max-width: 375px;
+    margin-top: 2rem;
+    background-color: #f8fafc;
+}
+
+.location-container {
+    width: 100%;
+    position: relative;
+}
+
+/* Location 헤더 */
+.location-header {
+    padding: 100px 10px 32px;
+    text-align: center;
+}
+
+.location-title {
+    font-family: 'Futura', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #a31e04;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    margin: 0;
+}
+
+/* 장소명 */
+.venue-name {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #171717;
+    line-height: 26px;
+    letter-spacing: -0.36px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/* 주소 */
+.venue-address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 32px;
+}
+
+.address-text {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #171717;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+}
+
+.copy-button {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 5px 8px;
+    border: 1px solid #dcddde;
+    border-radius: 400px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.copy-button:hover {
+    border-color: #a31e04;
+    background-color: rgba(163, 30, 4, 0.05);
+}
+
+.copy-button span {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: #9b9b9b;
+    line-height: 14px;
+    letter-spacing: -0.22px;
+}
+
+/* 전화번호 */
+.venue-phone {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #171717;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/* 약도 영역 (비워둠) */
+.location-map {
+    width: 343px;
+    height: 185px;
+    margin: 0 auto 16px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9b9b9b;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-size: 14px;
+}
+
+.location-map::before {
+    content: "약도 영역 (추후 구현 예정)";
+}
+
+/* 정보 섹션 (ATM, 대중교통) */
+.info-section {
+    padding: 0 16px;
+    margin-bottom: 0;
+}
+
+.info-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 28px;
+    cursor: pointer;
+}
+
+.info-title {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #333333;
+    line-height: 26px;
+    letter-spacing: -0.36px;
+    margin: 0;
+}
+
+.expand-button {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.expand-button.collapsed {
+    transform: rotate(180deg);
+}
+
+/* 구분선 */
+.divider {
+    width: 343px;
+    height: 1px;
+    margin: 16px auto;
+    background: repeating-linear-gradient(
+        to right,
+        #ebebeb 0px,
+        #ebebeb 2px,
+        transparent 2px,
+        transparent 4px
+    );
+}
+
+/* 대중교통 안내 내용 */
+.info-content {
+    padding: 16px 9px 0;
+}
+
+.transport-item {
+    margin-bottom: 26px;
+}
+
+.transport-type {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333333;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+    margin-bottom: 2px;
+}
+
+.transport-detail {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #333333;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+}
+
+/* 지도 앱 버튼들 */
+.map-buttons {
+    display: flex;
+    gap: 8px;
+    padding: 0 16px 32px;
+    margin-top: 26px;
+}
+
+.map-btn {
+    flex: 1;
+    height: 44px;
+    border: 1px solid #ebebeb;
+    border-radius: 6px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.map-btn:hover {
+    border-color: #a31e04;
+    background-color: rgba(163, 30, 4, 0.05);
+}
+
+.map-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #cccccc;
+    border-radius: 4px;
+}
+
+.map-btn span {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: #333333;
+    letter-spacing: 0.074px;
+    line-height: 15.6px;
+}
+
+/* Share Section Styles */
+.share {
+    width: 100%;
+    max-width: 375px;
+    margin-top: 2rem;
+    background-color: #f8fafc;
+}
+
+.share-container {
+    width: 100%;
+    position: relative;
+}
+
+/* Share 헤더 */
+.share-header {
+    padding: 100px 10px 32px;
+    text-align: center;
+}
+
+.share-title {
+    font-family: 'Futura', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #a31e04;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    margin: 0;
+}
+
+/* 공유 버튼들 */
+.share-buttons {
+    display: flex;
+    gap: 10px;
+    padding: 0 16px 32px;
+    justify-content: center;
+}
+
+.share-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 13px 20px;
+    border: 1px solid #dcddde;
+    border-radius: 100px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.share-btn:hover {
+    border-color: #a31e04;
+    background-color: rgba(163, 30, 4, 0.05);
+}
+
+.link-btn {
+    width: 135px;
+    height: 50px;
+    justify-content: center;
+}
+
+.kakao-btn {
+    height: 50px;
+    justify-content: center;
+}
+
+.share-btn span {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #5c5c5c;
+    line-height: 22px;
+    letter-spacing: -0.28px;
+}
+
+.share-btn svg {
+    flex-shrink: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .mcardWrap {
+        padding: 1rem;
+    }
+    
+    .mcard-background {
+        width: 100%;
+        max-width: 375px;
+        height: auto;
+        aspect-ratio: 375/667;
+    }
+    
+    .main {
+        max-width: 100%;
+    }
+}
