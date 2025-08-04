@@ -75,24 +75,19 @@ function openEnvelope(coverElement) {
     if (isOpened) {
         // 닫기
         coverElement.classList.remove('opened');
-        console.log('편지봉투가 닫혔습니다.');
     } else {
         // 열기
         coverElement.classList.add('opened');
-        console.log('편지봉투가 열렸습니다.');
     }
 }
 
 // 편지봉투 강제 닫기 함수
 function closeEnvelope(coverElement) {
     coverElement.classList.remove('opened');
-    console.log('편지봉투가 닫혔습니다.');
 }
 
 // 편지 봉투 애니메이션 함수 - 참고 사이트 기반
 function initLetterEnvelopeAnimation(containerSelector = '.envelope-invitation') {
-    console.log('편지봉투 애니메이션 초기화 시작');
-    
     let isOpened = false;
     
     // 초기화 시 뚜껑 z-index 설정
@@ -101,14 +96,11 @@ function initLetterEnvelopeAnimation(containerSelector = '.envelope-invitation')
         const lid = envelopeInvitation.querySelector('.envelope-container svg:last-of-type');
         if (lid) {
             lid.classList.add('lid-closed');
-            console.log('뚜껑 초기 설정 완료');
         }
     }
 
     // 클릭 토글
-    function toggleLetterEnvelope(e) {
-        console.log('클릭 이벤트 발생!', e);
-        
+    function toggleLetterEnvelope() {
         if (!isOpened) {
             // 봉투 열기
             isOpened = true;
@@ -116,7 +108,6 @@ function initLetterEnvelopeAnimation(containerSelector = '.envelope-invitation')
             
             if (envelopeInvitation) {
                 envelopeInvitation.classList.add('open');
-                console.log('봉투 열기 - open 클래스 추가됨');
                 
                 // 뚜껑 z-index 즉시 제거
                 const lid = envelopeInvitation.querySelector('.envelope-container svg:last-of-type');
@@ -131,31 +122,23 @@ function initLetterEnvelopeAnimation(containerSelector = '.envelope-invitation')
             
             if (envelopeInvitation) {
                 envelopeInvitation.classList.remove('open');
-                console.log('봉투 닫기 - open 클래스 제거됨');
                 
                 // 뚜껑 z-index 딜레이 후 적용 (300ms 딜레이)
                 const lid = envelopeInvitation.querySelector('.envelope-container svg:last-of-type');
                 if (lid) {
                     setTimeout(() => {
                         lid.classList.add('lid-closed');
-                        console.log('뚜껑 z-index 4 적용됨');
                     }, 300);
                 }
             }
         }
     }
 
-    // 클릭 이벤트 바인딩 - envelope-invitation에 바인딩
+    // 클릭 이벤트 바인딩
     if (envelopeInvitation) {
         envelopeInvitation.addEventListener('click', toggleLetterEnvelope);
-        console.log('클릭 이벤트 바인딩 완료:', containerSelector);
-        
-        // 테스트용 - 강제로 클릭 가능하도록
         envelopeInvitation.style.position = 'relative';
         envelopeInvitation.style.zIndex = '10';
-        
-    } else {
-        console.log('envelope-invitation 요소를 찾을 수 없어서 클릭 이벤트 바인딩 실패');
     }
 
     // 정리 함수 반환 (필요시 이벤트 리스너 제거용)
@@ -168,21 +151,14 @@ function initLetterEnvelopeAnimation(containerSelector = '.envelope-invitation')
 
 // DOM 로드 완료 후 실행
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('M카드 템플릿이 로드되었습니다.');
-    
     // Swiper가 로드된 후 Album Swiper 초기화
     if (typeof Swiper !== 'undefined') {
         const albumSwiperInstance = initAlbumSwiper();
-        console.log('Album Swiper 초기화 완료');
         
         // 앨범 썸네일 클릭 이벤트 초기화
         initAlbumThumbnailClick(albumSwiperInstance);
-        console.log('앨범 썸네일 클릭 이벤트 초기화 완료');
-    } else {
-        console.error('Swiper.js가 로드되지 않았습니다.');
     }
     
     // 편지봉투 애니메이션 초기화
     initLetterEnvelopeAnimation();
-    console.log('편지봉투 애니메이션 준비 완료');
 });
