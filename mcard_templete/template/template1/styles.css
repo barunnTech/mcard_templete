@@ -54,7 +54,7 @@ body {
     width: 100%;
     min-height: 667px;
     position: relative;
-    padding:105px 40px 155px;
+    padding: 105px 40px 155px;
 }
 
 .mcard-main {
@@ -386,7 +386,6 @@ width:100%;
     z-index: 2;
     transition: max-height 0.4s ease, top 0.4s ease, padding 0.4s ease, transform 0.4s ease;
     transition-delay: 0s;
-    border: 1px solid #e5e7eb;
 }
 
 .envelope-invitation.open .envelope-container .letter-content {
@@ -416,7 +415,7 @@ width:100%;
     font-size: 14px;
     line-height: 1.7;
     color: var(--text-color, #171717);
-    font-family: 'SpoqaHanSansNeo', sans-serif;
+    font-family: 'Nanum Myeongjo', serif;
     margin: 0;
 }
 
@@ -912,21 +911,31 @@ width:100%;
     border-radius: 4px;
     position: relative;
     box-shadow: 
-        0 0 1px rgba(0, 0, 0, 0.08),
-        0 0 1px rgba(0, 0, 0, 0.08),
-        0 1px 2px rgba(0, 0, 0, 0.12);
+        2px -2px 4px rgba(0, 0, 0, 0.03),
+        1px -3px 6px rgba(0, 0, 0, 0.02);
 }
 
-/* 클립 */
+/* 종이 접힌 모양 클립 */
 .note-clip {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    width: 23px;
-    height: 23px;
-    background-color: #dddddd;
-    border-radius: 2px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-top: 20px solid #e5e5e5;
     z-index: 2;
+}
+
+.note-clip::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #f8fafc;
+    border-top: 20px solid transparent;
 }
 
 /* 메모지 내용 */
@@ -1254,11 +1263,10 @@ width:100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease;
-}
-
-.expand-button.collapsed {
-    transform: rotate(180deg);
+    color: #171717;
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
 }
 
 /* 구분선 */
@@ -1518,7 +1526,6 @@ width:100%;
     padding: 20px;
     z-index: 3.5;
     transition: transform 0.7s ease-out, max-height 0.7s ease-out;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     max-height: 0;
     overflow: hidden;
 }
@@ -1545,4 +1552,75 @@ width:100%;
     margin: 0;
     font-size: 13px;
     text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .mcardWrap {
+        min-width: 320px;
+    }
+    
+    .mcard-background {
+        width: 100%;
+        min-width: 320px;
+        height: auto;
+        aspect-ratio: 375/667;
+    }
+    
+    .main, .invi, .calender, .album, .video, .guestbook, .gift, .location, .share {
+        min-width: 320px;
+    }
+    
+    .message-card {
+        max-width: 300px;
+        margin: 0 auto 20px;
+        padding: 24px 12.8px;
+        gap: 16px;
+    }
+    
+    .envelope-wrapper {
+        max-width: 250px;
+    }
+    
+    
+    .title-text {
+        font-size: 14px;
+    }
+    
+    .guide-text {
+        font-size: 12px;
+    }
+    
+    .letter-content {
+        width: 220px;
+        padding: 15px;
+    }
+    
+    .letter-content.show {
+        transform: translate(-50%, -25px);
+        max-height: 160px;
+    }
+    
+    .letter-content h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .letter-content p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    
+    .calendar-grid, .video-thumbnail, .write-message-btn, .gift-option, .location-map, .divider {
+        min-width: 300px;
+    }
+    
+    
+    .album-slide, .album-background {
+        min-width: 320px;
+    }
+    
+    .link-btn {
+        min-width: 120px;
+    }
 }
